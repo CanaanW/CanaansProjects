@@ -1,8 +1,29 @@
 h1{
-    color:rgb(41, 3, 87);
+    color: white;
     letter-spacing: 2.25px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Trebuchet MS', sans-serif;
     /* margin-left: 50px; */
-    text-shadow: 4px 4px 7px;
+    /* text-shadow: 4px 4px 7px; */
+    text-align:center;
+}
+
+#header{
+    /* background-image: linear-gradient(white, white, rgb(187, 149, 233)); */
+    /* background-image: linear-gradient(black,black,black); */
+    background-color:rgb(61, 61, 61);
+    padding:20px;
+    /* box-shadow:5px 10px 5px rgb(51, 51, 51); */
+}
+
+body{
+    background-color:black;
+    /* background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-size: 100%;     */
+}
+
+p{
+    color:white;
+    font-family:'Trebuchet MS', sans-serif;
     text-align:center;
 }
