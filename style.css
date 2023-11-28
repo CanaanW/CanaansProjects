@@ -2,28 +2,65 @@ h1{
     color: white;
     letter-spacing: 2.25px;
     font-family:'Trebuchet MS', sans-serif;
+    padding:20px;
     /* margin-left: 50px; */
     /* text-shadow: 4px 4px 7px; */
     text-align:center;
 }
 
+h5{
+    color:white;
+    font-family:'Trebuchet MS', sans-serif;
+    margin-left: 100px;
+    padding-top: 30px;
+}
 #header{
     /* background-image: linear-gradient(white, white, rgb(187, 149, 233)); */
     /* background-image: linear-gradient(black,black,black); */
     background-color:rgb(61, 61, 61);
-    padding:20px;
+    padding:10px;
     /* box-shadow:5px 10px 5px rgb(51, 51, 51); */
 }
 
 body{
+    /* margin-left: 100px; */
     background-color:black;
     /* background-repeat: repeat-x;
     background-attachment: fixed;
     background-size: 100%;     */
+    font-family:'Trebuchet MS', sans-serif;
+
 }
 
 p{
     color:white;
-    font-family:'Trebuchet MS', sans-serif;
     text-align:center;
+}
+div.description{
+    color: white;
+    text-align:left;
+    margin-left: 510px;
+}
+img.logo{
+    height:30px;
+    /* padding: 20px; */
+}
+
+figure{
+    color:white;
+    margin-left: 100px;
+    float: left;
+    size:1000px;
+    /* padding-top: 5px; */
+}
+
+div.picture{
+    height:20px;
+}
+div.main{
+    margin-left:10%;
+    top:0px;
+    padding-top: 0px;
+    padding-bottom:5px;
+    margin-right:15%;
 }
