@@ -15,6 +15,10 @@ h3{
     padding-top: 30px;
     text-align: center;
 }
+
+h5{
+    text-align: center;
+}
 #header{
     /* background-image: linear-gradient(white, white, rgb(187, 149, 233)); */
     /* background-image: linear-gradient(black,black,black); */
