@@ -2,7 +2,7 @@ h1{
     color: white;
     letter-spacing: 2.25px;
     font-family:'Trebuchet MS', sans-serif;
-    padding:20px;
+    /* padding:20px; */
     /* margin-left: 50px; */
     /* text-shadow: 4px 4px 7px; */
     text-align:center;
@@ -18,23 +18,25 @@ h5{
     /* background-image: linear-gradient(white, white, rgb(187, 149, 233)); */
     /* background-image: linear-gradient(black,black,black); */
     background-color:rgb(61, 61, 61);
-    padding:10px;
+    padding:20px;
     /* box-shadow:5px 10px 5px rgb(51, 51, 51); */
+}
+div.sub{
+    text-align: center;
 }
 
 body{
-    /* margin-left: 100px; */
-    background-color:black;
-    /* background-repeat: repeat-x;
+    background-color: black;
+    background-repeat: repeat-x;
     background-attachment: fixed;
-    background-size: 100%;     */
+    background-size: 100%;    
     font-family:'Trebuchet MS', sans-serif;
-
+    color:white;
+    /* text-align: left; */
 }
 
 p{
-    color:white;
-    text-align:center;
+    text-align:left;
 }
 div.description{
     color: white;
@@ -46,21 +48,77 @@ img.logo{
     /* padding: 20px; */
 }
 
-figure{
-    color:white;
-    margin-left: 100px;
-    float: left;
-    size:1000px;
-    /* padding-top: 5px; */
+img.picture{
+    height: 275px;
 }
 
-div.picture{
-    height:20px;
+figure figcaption{
+    text-align: center;
 }
+
+
+div.picture{
+    float: left;
+    padding: 4px;
+}
+
 div.main{
     margin-left:10%;
     top:0px;
     padding-top: 0px;
     padding-bottom:5px;
     margin-right:15%;
+}
+
+.phonetext{
+    color:blue;
+}
+
+@media only screen and (max-width:414){
+    .text{
+        visibility: collapse;
+    }
+
+}
+
+div.main{
+    margin-left:10%;
+    top:0px;
+    padding-top: 0px;
+    padding-bottom:5px;
+    margin-right:15%;
+}
+
+nav{
+    background-color:rgb(61,61,61);
+}
+
+ul.main {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:10px;
+    color: rgb(61,61,61);
+
+}
+
+li a {
+    font-family: 'Gill sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;;
+    display: block;
+    color: #ffffff;
+    padding: 8px 16px;
+    text-decoration:none;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+li a.active {
+    background-color: rgb(168, 130, 6);
+    color: white;
+}
+
+em{
+    color:bisque;
+    font-size:small;
 }
