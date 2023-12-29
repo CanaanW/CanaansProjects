@@ -123,3 +123,18 @@ em{
     color:bisque;
     font-size:small;
 }
+
+div.youtube{
+    position:relative;
+    overflow:hidden;
+    padding-top: 400px;
+}
+.responsive-iframe{
+    position:absolute;
+    top: 0;
+    left: 200;
+    bottom: 0;
+    right: 00;
+    width: 400px;
+    height: 400px;
+}
