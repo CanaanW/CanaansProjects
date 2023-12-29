@@ -8,11 +8,12 @@ h1{
     text-align:center;
 }
 
-h5{
+h3{
     color:white;
     font-family:'Trebuchet MS', sans-serif;
-    margin-left: 100px;
+    /* margin-left: 100px; */
     padding-top: 30px;
+    text-align: center;
 }
 #header{
     /* background-image: linear-gradient(white, white, rgb(187, 149, 233)); */
