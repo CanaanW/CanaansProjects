@@ -3,14 +3,13 @@
     <head>
         <title>Canaan's Portfolio</title>
         <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-        <link rel="stylesheet" media="screen" type="text/css" href="style.css">
+        <link rel="stylesheet" media="screen" type="text/css" href="main.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
-        <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet'/>
     </head>
 
     <body>
@@ -28,63 +27,36 @@
                 </ul>
             </div>
         </nav>
-        
-        <div class id="header">
-            <h1>Canaan Weise 
-                <img class="logo" src="CCBLogoGold.png" alt=""/>
-            </h1>
+
+        <div>
+            <h1>Canaan Weise</h1>
+            <p>This is my Portfolio</p>
         </div>
-        <div class="sub">This is a blog of all the coding projects I have undertaken over the years (which in itself is a coding project) </div>
+        <iframe src='https://my.spline.design/hnyspfSTGQhOsJDNHBGOe75E/' frameborder='0' width="100%" height="100%"></iframe>
 
+        <script src="https://unpkg.com/split-type"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
 
+        <script>
+            const headLine = new SplitType('h1')
+            const myText2 = new SplitType('p', {charClass:'char2'})
+            var tl = gsap.timeline({defaults: {ease: "Expo.easeInOut"}})
 
-        <div class="main">
-            <div class="container-fluid">    
-                <h3>Final Year Project</h3>
-                
-                <div class="row">
-                    <div class="col-xs-12 col-md-12">
-                        <div class="picture">
-                            <figure>
-                                <img class="picture" src="MediumDifficultyMaze.png" alt=""/>
-                                <figcaption><em>Reinforcement Learning on Sim'ed Robot Homing</em></figcaption>
-                            </figure>
-                        </div>
-                        <p>
-                            For my final year project at The University of Leeds I successfully showed that the machine learning paradigm, 
-                            Reinforcement Learning (RL), can be used to create an artificially intelligent simulated robot capable of 
-                            homing, using a Lidar sensor. 
-                        </p>
-                        <p>
-                            The goal of robot homing is for a robot to navigate from an initial position to a target location without relying on external sensors or pre-defined maps.
-                            This project was accomplished through the use of Double Deep Q-Learning, an effective and efficient 
-                            variation of the well-known RL algorithm Q-Learning. With the recent resurgence of RL in the rise of AI I was very excited about exploring the possibilities of algorithms 
-                            such as Q-Learning on (simulated) robots.  This task is particularly challenging because robots must deal with noisy sensors,
-                            uncertain dynamics, and complex environments. The challenging nature of robot homing requires the design of RL algorithms that can handle high-dimensional state and action 
-                            spaces while ensuring stability and convergence. Designing such algorithms requires expertise in both robotics and machine learning.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-xs-12 col-md-8">
-                        <hr>
-                        <h5>Video:</h5>
-                        <div class="youtube">
-                            <iframe class="responsive-iframe" src="https://www.youtube.com/embed/e_yKugsG8VA" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>    
-                    </div>
-                </div>
-
-                <div class = "row">
-                    <div class="col-md-12 col-xs-12">
-
-                    </div>
-                </div>
-
-
-            </div>
-        </div>
-        
+            tl.from('.char', {
+                y: -200,
+                stagger: 0.05,
+                delay: 1
+            })
+            .from('.char2', {
+                y: -200,
+                stagger: 0.05,
+                duration: .6
+            }, "-=1.2")
+            .to('h1,p', {
+                y: -125,
+                delay: .4,
+                duration: 1.4
+            })
+        </script>
     </body>
 </html>
