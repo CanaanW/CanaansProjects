@@ -29,7 +29,8 @@
 
         <div>
             <h1>Canaan Weise</h1>
-            <p>This is my Portfolio</p>
+            <p class="one">Welcome to my Portfolio</p>
+            <p class="two">I'm Computer Science graduate who specialized in Aritficial Intelligence, I'm also interested in data science and cloud services. I have hopes of becoming a software engineer who makes a difference in the world.</p>
         </div>
         <iframe src='https://my.spline.design/hnyspfSTGQhOsJDNHBGOe75E/' frameborder='0' width="100%" height="100%"></iframe>
 
@@ -38,7 +39,8 @@
 
         <script>
             const headLine = new SplitType('h1')
-            const myText2 = new SplitType('p', {charClass:'char2'})
+            const myText2 = new SplitType('p.one', {charClass:'char2'})
+            const myText3 = new SplitType('p.two', {charClass:'char3'})
             var tl = gsap.timeline({defaults: {ease: "Expo.easeInOut"}})
 
             tl.from('.char', {
@@ -51,7 +53,12 @@
                 stagger: 0.05,
                 duration: .6
             }, "-=1.2")
-            .to('h1,p', {
+            .from('.char3',{
+                y: -200,
+                // stagger:0.1,
+                // delay:1
+            })
+            .to('h1,p.one,p.two', {
                 y: -125,
                 delay: .4,
                 duration: 1.4
