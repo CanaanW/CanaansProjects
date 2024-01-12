@@ -79,13 +79,6 @@ div.main{
     color:blue;
 }
 
-@media only screen and (max-width:414){
-    .text{
-        visibility: collapse;
-    }
-
-}
-
 div.main{
     margin-left:10%;
     top:0px;
