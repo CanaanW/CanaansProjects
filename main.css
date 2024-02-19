@@ -48,7 +48,7 @@ h1 {
     
 }
 .p1-2{
-    font-size: 1.5rem;
+    font-size: 1rem;
     /* text-align: left; */
     /* color:#bdbdbd; */
     /* margin-left: 20%; */
@@ -60,20 +60,23 @@ h1 {
     display:grid;
 }
 .title{
-    font-size:5rem;
+    font-size:4.8rem;
     text-align: left;
     margin-left: 20%;
-    padding: 20px;
+    /* padding: 20px; */
 }
 .text{
     text-align: left;
     font-size: 135%;
-    padding: 20px;
+    /* margin-right: 10%; */
+   /* padding-right: 100px;  */
+    /* padding: 1200px; */
 }
 #UoL{
-    /* padding-left: 40px; */
-    /* place-items: right; */
+    padding-left: 50px;
+    place-items: right;
     margin-right: 20%;
+    /* height: 300px; */
 }
 h3{
     text-align: center;
@@ -87,14 +90,8 @@ h3{
     align-content: center;
     place-items: center;
 }
-.cards{
-    /* display:grid; */
-    /* align-content: center; */
-    /* place-items: center; */
-    /* margin-left: 25%; */
-}
 .card{
-  height: 300px;  
+  height: 275px;  
   /* float: center; */
   background-color: transparent;
   border: 0;
@@ -103,8 +100,10 @@ h3{
   align-content: center;
   place-items: center;
   position: relative; */
-  /* padding: 30px; */
-
+  /* padding: 10px; */
+}
+.mobile{
+    height: 0;
 }
 
 .card:nth-child(2){
@@ -114,24 +113,22 @@ h3{
     transition-delay: 600ms;
 }
 
-
-.section3{
-    display: grid;
+.projects{
+    /* display: flex; */
+    display:grid;
     place-items: center;
-    align-content: center;
+    align-items: center;
+    /* position: center; */
 }
+
 
 .navbar{
     position: fixed;
     top: 0;
     width: 100%;
 }
-
-.row{
-    margin-left: 5vw;
-}
 body {
-    margin: 0;
+    /* margin: 0; */
     /* height: 100vh; */
     font-family: 'Poppins', sans-serif;
     background-color:rgb(32, 32, 32);
@@ -149,13 +146,18 @@ iframe {
     /* right: 0; */
     bottom: 0;
     padding:0;
+}
+.video{
+    display:grid;
     align-items: center;
     align-content: center;
     place-items: center;
-
 }
 
 .responsive-iframe{
+    display:flex;
+    align-content: center;
+    /* palce */
     height: 50vh;
     width: 25%;
     padding:50px;
@@ -178,6 +180,7 @@ p{
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 0;
+    /* padding: 50px; */
 }
 
 h1, .p1, .p1-2, .p3 {
@@ -239,32 +242,50 @@ li a {
     transform: translateX(0);
 }
 
+.rl{
+    text-align: center;
+}
+
 @media(prefers-reduced-motion){
     .hidden{
         transition: none;
     }
 }
 
-@media screen and (max-width:414px){
+@media screen and (max-width:768px){
     .section2{
         display:grid;
+        /* place-items: center;
+        align-content: center; */
     }
     h3{
         font-size:large;
     }
-    .cards{
+    /* .cards{
         display: grid;
         margin-left: 0;
+        position:relative;
+    } */
+    .mobiles{
+        flex-direction: column;
+        display:list-item;
+        margin-right:25px;
     }
     .card{
-        height: 200px;
-        padding:0;
+        height: 0;
+    }
+    .mobile{
+        height:200px;
+        position: relative;
+        /* padding: 5px; */
     }
     #UoL{
         height:0;
     }
     .title{
         font-size: 2rem;
+        /* padding: 5px; */
+        /* position: relative; */
     }
     .text{
         font-size: 1rem;
@@ -273,6 +294,16 @@ li a {
     .p1-2{
         font-size:medium;
         margin: 15%;
+    }
+
+    .scroll-container{
+        scroll-snap-type: none;
+    }
+    .section{
+        flex-direction: column;
+        display: grid;
+        place-items: center;
+        align-content: center;
     }
 
 }
